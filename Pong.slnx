@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Core/Core.csproj" Id="c926a313-795f-41cb-b1f3-d13a780356c0" />
+  <Project Path="Pong/Pong.csproj" />
+</Solution>
