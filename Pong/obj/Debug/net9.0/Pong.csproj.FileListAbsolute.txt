@@ -33,3 +33,4 @@ C:\Users\willi\source\repos\Pong\Pong\obj\Debug\net9.0\Pong.genruntimeconfig.cac
 C:\Users\willi\source\repos\Pong\Pong\obj\Debug\net9.0\ref\Pong.dll
 C:\Users\willi\source\repos\Pong\Pong\bin\Debug\net9.0\Core.dll
 C:\Users\willi\source\repos\Pong\Pong\bin\Debug\net9.0\Core.pdb
+C:\Users\willi\source\repos\Pong\Pong\obj\Debug\net9.0\Pong.sourcelink.json

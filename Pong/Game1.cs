@@ -10,18 +10,20 @@ namespace Pong
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Texture2D _texture;
         private Paddle _leftPaddle;
         private Paddle _rightPaddle;
+        private PlayingField _playingField;
         private Ball _ball;
-
-
-        Texture2D _texture;
 
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+
+            _graphics.PreferredBackBufferWidth = 1280;
+            _graphics.PreferredBackBufferHeight = 720;
         }
 
         protected override void Initialize()
@@ -39,9 +41,10 @@ namespace Pong
             _texture = new Texture2D(GraphicsDevice, 1, 1);
             _texture.SetData([Color.White]);
 
-            _leftPaddle = new Paddle(0, (GraphicsDevice.Viewport.Height / 2) - 64);
-            _rightPaddle = new Paddle(GraphicsDevice.Viewport.Width - 16, (GraphicsDevice.Viewport.Height / 2) - 64);
-            _ball = new Ball((GraphicsDevice.Viewport.Width / 2) - 8, (GraphicsDevice.Viewport.Height / 2) - 8);
+            _playingField = new PlayingField(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height - 128);
+            _leftPaddle = new Paddle(_playingField, PaddlePosition.Left);
+            _rightPaddle = new Paddle(_playingField, PaddlePosition.Right);
+            _ball = new Ball(_playingField);
         }
 
         protected override void Update(GameTime gameTime)
@@ -82,6 +85,8 @@ namespace Pong
             _spriteBatch.Begin();
 
             // TODO: Add your drawing code here
+            DrawPlayingFieldBoundary();
+
             DrawPaddle(_leftPaddle);
             DrawPaddle(_rightPaddle);
             DrawBall(_ball);
@@ -97,7 +102,7 @@ namespace Pong
                 _ball.Bounce(_rightPaddle);
             }
 
-            if (_ball.X == 0 || _ball.X == GraphicsDevice.Viewport.Width)
+            if (_ball.X <= 0 || _ball.X >= _playingField.Width)
             {
                 _ball.Reset();
             }
@@ -105,6 +110,12 @@ namespace Pong
             _spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        private void DrawPlayingFieldBoundary() 
+        {
+            Rectangle boundary = new Rectangle(0, _playingField.Height, GraphicsDevice.Viewport.Width, 8);
+            _spriteBatch.Draw(_texture, boundary, Color.White);
         }
 
         private void DrawPaddle(Paddle paddle) 

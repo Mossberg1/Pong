@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\willi\\source\\repos\\Pong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|c:\\users\\willi\\source\\repos\\pong\\core\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|solutionrelative:core\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|c:\\users\\willi\\source\\repos\\pong\\core\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|solutionrelative:core\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|c:\\users\\willi\\source\\repos\\pong\\core\\playingfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|solutionrelative:core\\playingfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|c:\\users\\willi\\source\\repos\\pong\\core\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|solutionrelative:core\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A2F0566-9B39-37D1-0CDB-75FBF36D6B9C}|Pong\\Pong.csproj|c:\\users\\willi\\source\\repos\\pong\\pong\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A2F0566-9B39-37D1-0CDB-75FBF36D6B9C}|Pong\\Pong.csproj|solutionrelative:pong\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|c:\\users\\willi\\source\\repos\\pong\\core\\gamefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|solutionrelative:core\\gamefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A2F0566-9B39-37D1-0CDB-75FBF36D6B9C}|Pong\\Pong.csproj|c:\\users\\willi\\source\\repos\\pong\\pong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A2F0566-9B39-37D1-0CDB-75FBF36D6B9C}|Pong\\Pong.csproj|solutionrelative:pong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|c:\\users\\willi\\source\\repos\\pong\\core\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|solutionrelative:core\\collisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|c:\\users\\willi\\source\\repos\\pong\\core\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C926A313-795F-41CB-B1F3-D13A780356C0}|Core\\Core.csproj|solutionrelative:core\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 204,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\willi\\source\\repos\\Pong\\Pong\\Program.cs",
-              "RelativeDocumentMoniker": "Pong\\Program.cs",
-              "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Pong\\Program.cs",
-              "RelativeToolTip": "Pong\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T17:21:37.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "CollisionManager.cs",
               "DocumentMoniker": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\CollisionManager.cs",
               "RelativeDocumentMoniker": "Core\\CollisionManager.cs",
               "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\CollisionManager.cs",
               "RelativeToolTip": "Core\\CollisionManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-12T17:16:04.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameField.cs",
-              "DocumentMoniker": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\GameField.cs",
-              "RelativeDocumentMoniker": "Core\\GameField.cs",
-              "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\GameField.cs",
-              "RelativeToolTip": "Core\\GameField.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PlayingField.cs",
+              "DocumentMoniker": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\PlayingField.cs",
+              "RelativeDocumentMoniker": "Core\\PlayingField.cs",
+              "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\PlayingField.cs",
+              "RelativeToolTip": "Core\\PlayingField.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-12T16:57:53.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Paddle.cs",
               "DocumentMoniker": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\Paddle.cs",
               "RelativeDocumentMoniker": "Core\\Paddle.cs",
               "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\Paddle.cs",
               "RelativeToolTip": "Core\\Paddle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T16:19:28.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\Ball.cs",
               "RelativeDocumentMoniker": "Core\\Ball.cs",
               "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\Ball.cs",
               "RelativeToolTip": "Core\\Ball.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-12T16:54:25.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\willi\\source\\repos\\Pong\\Pong\\Game1.cs",
               "RelativeDocumentMoniker": "Pong\\Game1.cs",
               "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Pong\\Game1.cs",
               "RelativeToolTip": "Pong\\Game1.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAmwGAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-09T17:37:24.709Z",
               "EditorCaption": ""

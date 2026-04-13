@@ -10,10 +10,10 @@ namespace Core
     {
         public static bool HasCollided(Paddle paddle, Ball ball) 
         {             
-                return ball.X < paddle.X + paddle.Width &&
-                    ball.X + 16 > paddle.X &&
-                    ball.Y < paddle.Y + paddle.Height &&
-                    ball.Y + 16 > paddle.Y;
+            return ball.X < paddle.X + paddle.Width &&
+                ball.X + 16 > paddle.X &&
+                ball.Y < paddle.Y + paddle.Height &&
+                ball.Y + 16 > paddle.Y;
         }
     }
 }
