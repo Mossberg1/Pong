@@ -42,8 +42,7 @@
               "RelativeToolTip": "Core\\CollisionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T17:16:04.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T17:16:04.385Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Core\\PlayingField.cs",
               "ViewState": "AgIAAAIAAAAGoidlUk8wwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T16:57:53.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T16:57:53.348Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "Core\\Ball.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T16:54:25.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T16:54:25.944Z"
             },
             {
               "$type": "Document",
@@ -81,8 +78,7 @@
               "RelativeToolTip": "Core\\Paddle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T16:19:28.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T16:19:28.052Z"
             },
             {
               "$type": "Document",
@@ -92,7 +88,7 @@
               "RelativeDocumentMoniker": "Pong\\Game1.cs",
               "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Pong\\Game1.cs",
               "RelativeToolTip": "Pong\\Game1.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAxwHcAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAxwH0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-09T17:37:24.709Z",
               "EditorCaption": ""

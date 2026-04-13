@@ -115,20 +115,14 @@ namespace Pong
         private void DrawPlayingFieldBoundaries() 
         {
             Rectangle topBoundary = new Rectangle(_playingField.StartX, _playingField.StartY - 4, _playingField.Width, 4);
-            Rectangle bottomBoundary = new Rectangle(_playingField.StartX, _playingField.StartY + _playingField.Height + 4, _playingField.Width, 4);
-            Rectangle leftBoundary = new Rectangle(_playingField.StartX - 4, _playingField.StartY - 4, 4, _playingField.Height + 12);
-            Rectangle rightBoundary = new Rectangle(_playingField.StartX + _playingField.Width, _playingField.StartY - 4, 4, _playingField.Height + 12);
+            Rectangle bottomBoundary = new Rectangle(_playingField.StartX, _playingField.StartY + _playingField.Height, _playingField.Width, 4);
+            Rectangle leftBoundary = new Rectangle(_playingField.StartX - 4, _playingField.StartY - 4, 4, _playingField.Height + 8);
+            Rectangle rightBoundary = new Rectangle(_playingField.StartX + _playingField.Width, _playingField.StartY - 4, 4, _playingField.Height + 8);
 
             _spriteBatch.Draw(_texture, topBoundary, Color.White);
             _spriteBatch.Draw(_texture, bottomBoundary, Color.White);
             _spriteBatch.Draw(_texture, leftBoundary, Color.White);
             _spriteBatch.Draw(_texture, rightBoundary, Color.White);
-        }
-
-        private void DrawPlayingField() 
-        {
-            Rectangle playingFieldRect = new Rectangle(_playingField.StartX, _playingField.StartY, _playingField.Width, _playingField.Height);
-            _spriteBatch.Draw(_texture, playingFieldRect, Color.DarkGray);
         }
 
         private void DrawPaddle(Paddle paddle) 
