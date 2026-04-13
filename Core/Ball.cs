@@ -23,8 +23,8 @@ namespace Core
         public Ball(PlayingField field) 
         {
             _field = field;
-            _startX = (_field.Width / 2) - 8;
-            _startY = (_field.Height / 2) - 8;
+            _startX = _field.StartX + (_field.Width / 2) - 8;
+            _startY = _field.StartY + (_field.Height / 2) - 8;
             _x = _startX;
             _y = _startY;
             _dx = _speed;
@@ -45,7 +45,7 @@ namespace Core
             _x += (int)_dx;
             _y += (int)_dy;
 
-            if (_y <= 0 || _y >= _field.Height - 16)
+            if (_y <= _field.StartY || _y >= _field.StartY + _field.Height - 16)
             {
                 _dy *= -1;
             }

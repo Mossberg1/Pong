@@ -11,11 +11,15 @@ namespace Core
     {
         public int Width { get; init; }
         public int Height { get; init; }
+        public int StartX { get; init; }
+        public int StartY { get; init; }
 
-        public PlayingField(int width, int height) 
+        public PlayingField(int width, int height, int startX, int startY) 
         {
             Width = width;
             Height = height;
+            StartX = startX;
+            StartY = startY;
         }
     }
 }

@@ -41,7 +41,7 @@ namespace Pong
             _texture = new Texture2D(GraphicsDevice, 1, 1);
             _texture.SetData([Color.White]);
 
-            _playingField = new PlayingField(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height - 128);
+            _playingField = new PlayingField(GraphicsDevice.Viewport.Width - 200, GraphicsDevice.Viewport.Height - 160, 100, 80);
             _leftPaddle = new Paddle(_playingField, PaddlePosition.Left);
             _rightPaddle = new Paddle(_playingField, PaddlePosition.Right);
             _ball = new Ball(_playingField);
@@ -85,7 +85,7 @@ namespace Pong
             _spriteBatch.Begin();
 
             // TODO: Add your drawing code here
-            DrawPlayingFieldBoundary();
+            DrawPlayingFieldBoundaries();
 
             DrawPaddle(_leftPaddle);
             DrawPaddle(_rightPaddle);
@@ -102,7 +102,7 @@ namespace Pong
                 _ball.Bounce(_rightPaddle);
             }
 
-            if (_ball.X <= 0 || _ball.X >= _playingField.Width)
+            if (_ball.X <= _playingField.StartX || _ball.X >= _playingField.StartX + _playingField.Width - 16)
             {
                 _ball.Reset();
             }
@@ -112,10 +112,23 @@ namespace Pong
             base.Draw(gameTime);
         }
 
-        private void DrawPlayingFieldBoundary() 
+        private void DrawPlayingFieldBoundaries() 
         {
-            Rectangle boundary = new Rectangle(0, _playingField.Height, GraphicsDevice.Viewport.Width, 8);
-            _spriteBatch.Draw(_texture, boundary, Color.White);
+            Rectangle topBoundary = new Rectangle(_playingField.StartX, _playingField.StartY - 4, _playingField.Width, 4);
+            Rectangle bottomBoundary = new Rectangle(_playingField.StartX, _playingField.StartY + _playingField.Height + 4, _playingField.Width, 4);
+            Rectangle leftBoundary = new Rectangle(_playingField.StartX - 4, _playingField.StartY - 4, 4, _playingField.Height + 12);
+            Rectangle rightBoundary = new Rectangle(_playingField.StartX + _playingField.Width, _playingField.StartY - 4, 4, _playingField.Height + 12);
+
+            _spriteBatch.Draw(_texture, topBoundary, Color.White);
+            _spriteBatch.Draw(_texture, bottomBoundary, Color.White);
+            _spriteBatch.Draw(_texture, leftBoundary, Color.White);
+            _spriteBatch.Draw(_texture, rightBoundary, Color.White);
+        }
+
+        private void DrawPlayingField() 
+        {
+            Rectangle playingFieldRect = new Rectangle(_playingField.StartX, _playingField.StartY, _playingField.Width, _playingField.Height);
+            _spriteBatch.Draw(_texture, playingFieldRect, Color.DarkGray);
         }
 
         private void DrawPaddle(Paddle paddle) 

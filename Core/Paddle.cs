@@ -17,13 +17,13 @@
         public Paddle(PlayingField field, PaddlePosition pos) 
         {
             _field = field;
-            _y = (_field.Height / 2) - 64;
+            _y = _field.StartY + (_field.Height / 2) - 64;
 
-            _x = pos == PaddlePosition.Left ? 0 : _field.Width - 16;
+            _x = _field.StartX + (pos == PaddlePosition.Left ? 0 : _field.Width - 16);
         }
 
-        public void MoveUp() => _y = Math.Max(0, _y - _speed);
+        public void MoveUp() => _y = Math.Max(_field.StartY, _y - _speed);
 
-        public void MoveDown() => _y = Math.Min(_field.Height - _height, _y + _speed);
+        public void MoveDown() => _y = Math.Min(_field.StartY + _field.Height - _height, _y + _speed);
     }
 }
