@@ -11,10 +11,13 @@ namespace Pong
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private Texture2D _texture;
+        private SpriteFont _font;
         private Paddle _leftPaddle;
         private Paddle _rightPaddle;
         private PlayingField _playingField;
         private Ball _ball;
+        private int _leftScore ;
+        private int _rightScore;
 
         public Game1()
         {
@@ -40,6 +43,8 @@ namespace Pong
             // TODO: use this.Content to load your game content here
             _texture = new Texture2D(GraphicsDevice, 1, 1);
             _texture.SetData([Color.White]);
+
+            _font = Content.Load<SpriteFont>("Font");
 
             _playingField = new PlayingField(GraphicsDevice.Viewport.Width - 200, GraphicsDevice.Viewport.Height - 160, 100, 80);
             _leftPaddle = new Paddle(_playingField, PaddlePosition.Left);
@@ -85,6 +90,7 @@ namespace Pong
             _spriteBatch.Begin();
 
             // TODO: Add your drawing code here
+            DrawScore();
             DrawPlayingFieldBoundaries();
 
             DrawPaddle(_leftPaddle);
@@ -102,14 +108,27 @@ namespace Pong
                 _ball.Bounce(_rightPaddle);
             }
 
-            if (_ball.X <= _playingField.StartX || _ball.X >= _playingField.StartX + _playingField.Width - 16)
+            if (_ball.X <= _playingField.StartX)
             {
                 _ball.Reset();
+                _rightScore++;
+            }
+            else if (_ball.X >= _playingField.StartX + _playingField.Width - 16)
+            {
+                _ball.Reset();
+                _leftScore++;
             }
 
             _spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        private void DrawScore() 
+        {
+            string scoreText = $"{_leftScore} - {_rightScore}";
+            Vector2 scorePosition = new Vector2(_playingField.StartX, 20);
+            _spriteBatch.DrawString(_font, scoreText, scorePosition, Color.White);
         }
 
         private void DrawPlayingFieldBoundaries() 
