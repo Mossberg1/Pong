@@ -109,12 +109,12 @@ namespace Pong
 
             if (_ball.X <= _playingField.StartX)
             {
-                _ball.Reset();
+                Reset();
                 _rightScore++;
             }
             else if (_ball.X >= _playingField.StartX + _playingField.Width - 16)
             {
-                _ball.Reset();
+                Reset();
                 _leftScore++;
             }
 
@@ -153,6 +153,13 @@ namespace Pong
         {
             Rectangle ballRect = new Rectangle(ball.X, ball.Y, 16, 16);
             _spriteBatch.Draw(_texture, ballRect, Color.White);
+        }
+
+        private void Reset() 
+        {
+            _leftPaddle.Reset();
+            _rightPaddle.Reset();
+            _ball.Reset();
         }
     }
 }

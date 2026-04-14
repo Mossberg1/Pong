@@ -38,8 +38,7 @@
               "RelativeToolTip": "Core\\PlayingField.cs",
               "ViewState": "AgIAAAIAAAAGoidlUk8wwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T16:57:53.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T16:57:53.348Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "Core\\Ball.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T16:54:25.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T16:54:25.944Z"
             },
             {
               "$type": "Document",
@@ -62,7 +60,7 @@
               "RelativeDocumentMoniker": "Core\\Paddle.cs",
               "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Core\\Paddle.cs",
               "RelativeToolTip": "Core\\Paddle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T16:19:28.052Z",
               "EditorCaption": ""
@@ -75,7 +73,7 @@
               "RelativeDocumentMoniker": "Pong\\Game1.cs",
               "ToolTip": "C:\\Users\\willi\\source\\repos\\Pong\\Pong\\Game1.cs",
               "RelativeToolTip": "Pong\\Game1.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCUAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAQwKUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-09T17:37:24.709Z",
               "EditorCaption": ""
