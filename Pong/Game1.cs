@@ -32,6 +32,10 @@ namespace Pong
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            _playingField = new PlayingField(GraphicsDevice.Viewport.Width - 200, GraphicsDevice.Viewport.Height - 160, 100, 80);
+            _leftPaddle = new Paddle(_playingField, PaddlePosition.Left);
+            _rightPaddle = new Paddle(_playingField, PaddlePosition.Right);
+            _ball = new Ball(_playingField);
 
             base.Initialize();
         }
@@ -45,11 +49,6 @@ namespace Pong
             _texture.SetData([Color.White]);
 
             _font = Content.Load<SpriteFont>("Font");
-
-            _playingField = new PlayingField(GraphicsDevice.Viewport.Width - 200, GraphicsDevice.Viewport.Height - 160, 100, 80);
-            _leftPaddle = new Paddle(_playingField, PaddlePosition.Left);
-            _rightPaddle = new Paddle(_playingField, PaddlePosition.Right);
-            _ball = new Ball(_playingField);
         }
 
         protected override void Update(GameTime gameTime)

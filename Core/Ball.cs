@@ -28,7 +28,7 @@ namespace Core
             _x = _startX;
             _y = _startY;
             _dx = _speed;
-            _dy = _speed;
+            _dy = 0;
         }
 
         public void Bounce(Paddle paddle)
@@ -53,10 +53,12 @@ namespace Core
 
         public void Reset() 
         {
+            Random rand = new Random();
+
             _x = _startX;
             _y = _startY;
-            _dx = _speed;
-            _dy = _speed;
+            _dx = rand.Next(2) == 0 ? _speed : -_speed ;
+            _dy = rand.Next(-2, 3);
         }
     }
 }
